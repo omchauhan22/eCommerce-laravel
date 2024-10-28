@@ -1,21 +1,23 @@
 @extends('master')
 @section("content")
-<div class="container custom-login">
-    <div class="row">
-        <div class="d-flex justify-content-center">
-            <form action="login" method="POST" >
-                <div class="form-group">
-                    @csrf
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                </div>
-                <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-secondary">Login</button>
-            </form>
-        </div>
+<div class="register-body">
+    <div class="wrapper">
+        <h2>Login</h2>
+        <form action="login" method="POST">
+            @csrf
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Enter your password" required>
+            </div>  
+            <div class="input-box button">
+                <input type="submit" value="Login">
+            </div>
+            <div class="text">
+                <h3>Don't have account? <a href="/register">Register now</a></h3>
+            </div>
+        </form>
     </div>
-</div>
+    </div>
 @endsection

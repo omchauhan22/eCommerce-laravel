@@ -1,1 +1,9 @@
-<h1 class="d-flex justify-content-center">footer</h1>
+{{-- <div class="card">
+    <div class="card-body">
+      Panel content
+    </div>
+    <div class="card-footer">
+      Panel footer
+    </div>
+  </div>
+   --}}
